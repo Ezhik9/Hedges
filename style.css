@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* background-color: var(--background-color); */
+}
+html {
+    font-size: 18px;
+}
+:root {
+    --background-color: #5C8064;
+    --font-size: 2.25rem;
+    --font-family: 'Irish Grover', cursive;
+    --font-family2: Inika, cursive;
+}
+h1 {
+    font-family: var(--font-family);
+}
+header {
+    position: relative;
+    width: 100dvw;
+    height: 100dvw;
+}
+header img {
+    /* position: relative; */
+    width: 100dvw;
+    overflow: hidden;
+    z-index: -1;
+}
+.text-header {
+    position: absolute;
+    color: white;
+    display: flex;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    /* justify-content: space-around; */
+    transform: translateY(-235%);
+    padding-top: 2rem;
+    gap: 70%;
+    padding-left: 12rem;
+    /* top: 3rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    gap: 45rem; */
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+.back {
+    /* position: relative; */
+    background-color: var(--background-color);
+    background-image: url(..//Hedges/Style/img/back-forest.png);
+    width: 100dvw;
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+.left-back {
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+.left-back input {
+    width: 35dvw;
+    height: 7dvh;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-family: var(--font-family2);
+    font-size: var(--font-size);
+}
+.inside-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.up-back h1 {
+    font-size: 100px;
+    font-weight: lighter;
+}
+.inside-back img {
+    z-index: 0;
+    width: 37dvw;
+}
+.up-back p {
+    opacity: 0.7;
+}
+p {
+    font-family: var(--font-family2);
+}
+#catalog {
+    position: relative;
+}
+#catalog img {
+    width: 100dvw;
+}
+#catalog h1 {
+    position: absolute;
+    display: flex;
+    
+}
