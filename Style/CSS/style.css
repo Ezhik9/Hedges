@@ -51,7 +51,7 @@ header img {
 .back {
     /* position: relative; */
     background-color: var(--background-color);
-    background-image: url(./img/back-forest.png);
+    background-image: url(../img/back-forest.png);
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
