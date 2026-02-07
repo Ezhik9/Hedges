@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* background-color: var(--background-color); */
+}
+html {
+    font-size: 18px;
+}
+:root {
+    --background-color: #807464;
+    --font-size: clamp(1em, 4vw, 2.25em);
+    --font-size2: clamp(1.5em, 5vw, 2.75em);
+    --font-family: 'Irish Grover', cursive;
+    --font-family2: Inika, cursive;
+}
+h1 {
+    font-family: var(--font-family);
+}
+p {
+    font-family: var(--font-family2);
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+header img {
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+}
+.text-header {
+    position: absolute;
+    width: 100vw;
+    color: white;
+    display: flex;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    gap: 5em;
+    justify-content: center;
+    /* padding-left: 2em; */
+    z-index: 1;
+    top: 1em;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+.left a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.back {
+    /* position: relative; */
+    background-color: var(--background-color);
+    background-image: url(../memes_gallary/back-m.png);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+.back-text {
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    color: white;
+    font-size: var(--font-size);
+}
+#gallary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallary img {
+    width: 100dvw;
+}
+#gallary h1 {
+    position: absolute;
+    font-size: var(--font-size2);
+}
+#inside-gallary {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#inside-gallary img {
+    width: 23dvw;
+}
+.up-gallary-p {
+    display: flex;
+    gap: 2em;
+}
+.down-gallary-p {
+    display: flex;
+    gap: 2em;
+}
+
+
+@media(max-width: 750px){
+    .text-header {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    z-index: 1;
+    top: 0.5em;
+    }
+}
+@media(max-width: 425px){
+    .img-up {
+        height: 5em;
+    }
+    .text-header {
+    display: flex;
+    gap: 0.25em;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+    }
+}
+@media(max-width: 950px){
+    #inside-gallary {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1em;
+}
+#inside-gallary img {
+    width: 35dvw;
+}
+.up-gallary-p {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.down-gallary-p {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+}
+@media(max-width: 450px){
+    #inside-gallary {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#inside-gallary img {
+    width: 50dvw;
+}
+.up-gallary-p {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.down-gallary-p {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+}
